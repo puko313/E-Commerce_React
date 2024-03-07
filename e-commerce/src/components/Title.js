@@ -19,7 +19,7 @@ class Title extends Component {
             }
           >
             {name}{' '}
-            <strong
+            <strong 
               className={
                 theme ? 'text-primary' : 'text-blue'
               }
