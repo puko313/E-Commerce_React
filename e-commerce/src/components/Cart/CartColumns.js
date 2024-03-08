@@ -17,6 +17,15 @@ export default function CartColumns() {
                     <p className={theme ? "text-uppercase text-light" : "text-uppercase"}>price</p>
                 </div>
                 </div>   
+                <div className="col-10 mx-auto col-lg-2">
+                    <p className={theme ? "text-uppercase text-light" : "text-uppercase"}>quantity</p>
+                </div>
+                <div className="col-10 mx-auto col-lg-2">
+                    <p className={theme ? "text-uppercase text-light" : "text-uppercase"}>remove</p>
+                </div>
+                <div className="col-10 mx-auto col-lg-2">
+                    <p className={theme ? "text-uppercase text-light" : "text-uppercase"}>total</p>
+                </div>
         </div>
           )}
           </ThemeConsumer>
