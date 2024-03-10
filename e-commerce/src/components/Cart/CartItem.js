@@ -17,7 +17,15 @@ export default function CartItem ({item,value}) {
            <div className={theme ? "col-10 mx-auto col-lg-2 text-light" : "col-10 mx-auto col-lg-2"}>
                 <span className={theme ? "d-lg-none text-light" : "d-lg-none"}>price : </span>{price}
            </div>
-
+           <div className="col-10 mx-auto col-lg-2 my-2 my-lg-2-0">
+             <div className="d-flex justify-content-center">
+                 <div>
+                    <span className={theme ? "btn btn-light mx-1 text-black" : "btn btn-black mx-1"} onClick={()=>decrement(id)}>-</span>
+                    <span className={theme ? "btn btn-light mx-1 text-black" : "btn btn-black mx-1"}>{count}</span>
+                    <span className={theme ? "btn btn-light mx-1 text-black" : "btn btn-black mx-1"} onClick={() => increment(id)}>+</span>
+                 </div>
+             </div> 
+           </div>
             {/**/} 
             <div className={theme ? "col-10 mx-auto col-lg-2 text-light" : "col-10 mx-auto col-lg-2"} >
                 <div className="cart-icon" onClick={()=>removeItem(id)}>
